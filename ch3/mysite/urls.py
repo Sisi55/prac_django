@@ -18,10 +18,10 @@ from django.urls import path
 from polls import views # polls 폴더 안에 views.py 파일 있다
 
 urlpatterns = [
-    path('/admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
 
 # path(url패턴 문자열,  호출되는 뷰 함수, 추가인자, name=url패턴이름지정)
-    path('/polls/', views.index, name='index'), #url 패턴 매칭은 위-아래로 진행되므로, 정의 순서에 유의한다
+    path('polls/', views.index, name='index'), #url 패턴 매칭은 위-아래로 진행되므로, 정의 순서에 유의한다
     # path('polls/<int:question_id>/', views.detail, name='detail'), #뷰 함수에 인자가 전달된다
     # path('polls/<int:question_id>/results/', views.results, name='results'),
     # path('polls/<int:question_id>/vote/', views.vote, name='vote'),

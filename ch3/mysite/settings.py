@@ -25,7 +25,7 @@ SECRET_KEY = '!37907-8e*s$5$7e8lts755nz^phmz@!xr=0klqvhisnji&x!q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
     'polls.apps.PollsConfig' #앱 설정 클래스 등록
 ]
 
